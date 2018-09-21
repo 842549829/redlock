@@ -25,7 +25,9 @@ del %NupkgPath% /F /Q
 
 ::生成程序包
 nuget pack %Sender% -Build -Prop Configuration=%PublishMode%
+::上传包
 nuget push %NupkgPath% -Source %SourceUrl% -ApiKey %ApiKey%
+::删除nuget包
 del %NupkgPath% /F /Q
 
 pause
