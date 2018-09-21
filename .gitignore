@@ -187,3 +187,4 @@ apikey.txt
 /.vs/redlock-cs/v15/Server/sqlite3
 /tests
 /packages
+/.vs
